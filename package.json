@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/HarryChen0506/cli-demo#readme",
   "devDependencies": {
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "yargs": "^13.2.4"
   }
 }

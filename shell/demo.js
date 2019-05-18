@@ -1,7 +1,8 @@
 // demo测试
 const path = require('path')
-var shell = require('shelljs')
-
+const shell = require('shelljs')
+const argv = require('./argv')
+console.log('argv', argv)
 
 function createJsFile() {
   var content = `
@@ -22,12 +23,16 @@ function getNodeInfo() {
   var version = shell.exec('node --version', {silent:true}).stdout
   console.log('version', version)
 }
+function readCliInfo() {
+  console.log('process.argv', process.argv)
+}
 
 function initail() {
+  // readCliInfo()
   // removeTempDir()
   // createTempDir()
   // createJsFile()
-  getNodeInfo()
+  // getNodeInfo()
 }
 initail()
 
